@@ -68,4 +68,15 @@ h1 {
     width: auto;
     height: 26px; }
 
+.logo {
+  position: absolute;
+  top: 0;
+  left: 45%; }
+
+.icons a i {
+  color: #362f2f;
+  padding-top: 27px;
+  padding-right: 20px;
+  font-size: 15px; }
+
 /*# sourceMappingURL=style.css.map */
