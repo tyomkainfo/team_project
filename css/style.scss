@@ -9,7 +9,6 @@ body {
   margin: 0;
 }
 
-
 h1 {
   color: red;
 }
@@ -38,6 +37,8 @@ h1 {
   position: absolute;
   top: 45px;
   left: 0;
+  text-transform: uppercase;
+
 }
 
 .navbar-nav > li {
@@ -70,22 +71,32 @@ h1 {
     text-align: left;
     font-weight: normal;
     background-color: black;
-    .img_photo_2{
+    .img_photo_2 {
       margin-bottom: 20px;
     }
-    p{
+    p {
       text-align: center;
     }
-    .img_rsvp{
+    .img_rsvp {
       margin-left: 145px;
       margin-top: 30px;
     }
-  .col-sm-12{
-    img{
+    .col-sm-12 {
+      img {
+
+      }
+    }
+  }
+
+  footer {
+    .container_partners {
+      max-width: 150px;
 
     }
   }
-}
+  .owl-carousel .owl-item img {
+    width: auto;
+    height: 26px;
 
   }
 }
