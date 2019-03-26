@@ -75,7 +75,7 @@ h1 {
   position: absolute;
   top: 45px;
   left: 0;
-}
+  text-transform: uppercase; }
 
 .navbar-nav > li {
   float: none;
@@ -97,5 +97,31 @@ h1 {
 .container {
   position: relative;
 }
+
+  .container .block_left {
+    width: 360px;
+    height: 360px;
+    font-size: 16px;
+    font-family: 'RobotoCondensed', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    line-height: 0.9;
+    text-align: left;
+    font-weight: 100;
+    background-color: black; }
+    .container .block_left .img_photo_2 {
+      margin-bottom: 20px; }
+    .container .block_left p {
+      text-align: center;
+      margin-top: 10px; }
+    .container .block_left .img_rsvp {
+      margin-left: 145px;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+  .container footer .container_partners {
+    max-width: 150px; }
+  .container .owl-carousel .owl-item img {
+    width: auto;
+    height: 26px; }
 
 /*# sourceMappingURL=style.css.map */

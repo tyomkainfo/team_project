@@ -95,6 +95,8 @@ h1 {
   position: absolute;
   top: 45px;
   left: 0;
+  text-transform: uppercase;
+
 }
 
 .navbar-nav > li {
@@ -116,6 +118,47 @@ h1 {
 
 .container {
   position: relative;
+  .block_left {
+    width: 360px;
+    height: 360px;
+    font-size: 16px;
+    font-family: 'RobotoCondensed', sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.9;
+    text-align: left;
+    font-weight: 100;
+    background-color: black;
+    .img_photo_2 {
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .img_rsvp {
+      margin-left: 145px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .col-sm-12 {
+      img {
+
+      }
+    }
+  }
+
+  footer {
+    .container_partners {
+      max-width: 150px;
+
+    }
+  }
+  .owl-carousel .owl-item img {
+    width: auto;
+    height: 26px;
+
+  }
 }
 
 
