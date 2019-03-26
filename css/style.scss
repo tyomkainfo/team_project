@@ -9,6 +9,7 @@ body {
   margin: 0;
 }
 
+
 h1 {
   color: red;
 }
@@ -58,4 +59,12 @@ h1 {
 
 .container {
   position: relative;
+}
+
+.block_left{
+  font-size: 18px;
+  font-family: "RobotoCondensed";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.778;
 }
