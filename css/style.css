@@ -5,4 +5,41 @@ body {
 h1 {
   color: red; }
 
+.navbar-header {
+  float: none; }
+
+.navbar-toggle {
+  display: block;
+  border-radius: 0px;
+  border: none; }
+
+.navbar-collapse.collapse {
+  display: none !important; }
+
+.navbar-nav {
+  float: none !important; }
+
+.navbar-collapse {
+  width: 100%;
+  background-color: #4a2a2a;
+  position: absolute;
+  top: 45px;
+  left: 0; }
+
+.navbar-nav > li {
+  float: none; }
+
+.navbar-collapse.collapse.in {
+  display: block !important; }
+
+.navbar-toggle:focus, .navbar-toggle:hover, .navbar-toggle {
+  background-color: #4a2a2a; }
+
+.navbar-toggle .icon-bar {
+  background-color: #fefefe;
+  height: 3px; }
+
+.container {
+  position: relative; }
+
 /*# sourceMappingURL=style.css.map */
