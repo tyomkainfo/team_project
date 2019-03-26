@@ -37,6 +37,8 @@ h1 {
   position: absolute;
   top: 45px;
   left: 0;
+  text-transform: uppercase;
+
 }
 
 .navbar-nav > li {
@@ -58,4 +60,18 @@ h1 {
 
 .container {
   position: relative;
+}
+
+
+footer{
+  .container_partners{
+    max-width: 150px;
+
+
+  }
+}
+.owl-carousel .owl-item img{
+  width: auto;
+  height: 26px;
+
 }

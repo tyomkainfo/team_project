@@ -24,7 +24,8 @@ h1 {
   background-color: #4a2a2a;
   position: absolute;
   top: 45px;
-  left: 0; }
+  left: 0;
+  text-transform: uppercase; }
 
 .navbar-nav > li {
   float: none; }
@@ -41,5 +42,12 @@ h1 {
 
 .container {
   position: relative; }
+
+footer .container_partners {
+  max-width: 150px; }
+
+.owl-carousel .owl-item img {
+  width: auto;
+  height: 26px; }
 
 /*# sourceMappingURL=style.css.map */
