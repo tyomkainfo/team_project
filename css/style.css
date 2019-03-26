@@ -64,6 +64,10 @@ h1 {
       margin-bottom: 20px; }
     .container .block_left .img_rsvp:hover {
       transform: scale(1.5); }
+    @media screen and (max-width 380px) {
+      .container .block_left .block_left {
+        width: 300px;
+        height: 300px; } }
   .container footer .container_partners {
     max-width: 150px; }
   .container .owl-carousel .owl-item img {
