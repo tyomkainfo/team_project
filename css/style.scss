@@ -54,10 +54,17 @@ h1 {
       color: #7a7a7a;
       margin-bottom: 4px;
     }
+    .new-description{
+      position: relative;
+    }
     .new-link{
       font-size: 10px;
       color: #c3a000;
       text-transform: uppercase;
+      position: absolute;
+      right: 0;
+      background: white;
+      padding: 0 10px;
 
       &:hover{
        text-decoration: none;
