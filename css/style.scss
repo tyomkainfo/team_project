@@ -94,6 +94,7 @@ h1 {
     background-color: black;
     .img_photo_2 {
       margin-bottom: 20px;
+      width: 100%;
     }
     p {
       text-align: center;
@@ -138,13 +139,20 @@ h1 {
   font-size: 15px;
 }
 
+
+
+////////////////___Top_block___/////////////////
+
 section{
   margin-bottom: 62px;
+  @include max-screen(767px){
+    margin-bottom: 30px;
+  }
   .container{
     .slide-one{
       max-width: 1140px;
       width: 100%;
-      margin: auto;
+      margin: 0;
       .carousel-content{
         width: 100%;
         position: relative;
@@ -153,60 +161,203 @@ section{
         width: 100%;
       }
       .descript{
+        width: 25%;
         background-color: #fff;
         position: absolute;
         left: 0;
         bottom: 0;
+        transition: 0.5s;
+        @include max-screen(1199px){
+          width: 30%;
+        }
+        @include max-screen(991px){
+          width: 35%;
+        }
+        @include max-screen(767px){
+          position: relative;
+          width: 100%;
+          text-align: center;
+        }
+        .compress{
+          &:hover{
+            cursor: pointer;
+          }
+          @include max-screen(767px){
+            display: none;
+          }
+          img{
+            float: right;
+            width: 17px;
+            margin: 5px 5px 0 0;
+          }
+        }
         h3{
           font: 18px/18px 'Robotocondensed';
           color: #362f2f;
           text-transform: uppercase;
           margin: 70px 0 0 20px;
+          @include max-screen(991px){
+            margin-top: 40px;
+          }
+          @include max-screen(767px){
+            margin-top: 15px;
+            font-size: 16px;
+          }
         }
         span{
           font: 14px/14px 'Robotocondensed';
           margin-left: 20px;
           font-style: italic;
+          @include max-screen(767px){
+            font-size: 12px;
+          }
+          @include max-screen(450px){
+            font-size: 10px;
+          }
         }
         p{
+          height: 55px;
+          overflow: hidden;
           font: 14px/14px 'Robotocondensedlight';
           max-width: 165px;
           color: #362f2f;
           margin: 15px 0 0 20px;
+          transition: 0.3s;
+          @include max-screen(767px){
+            font-size: 12px;
+            max-width: 90%;
+            height: auto;
+            text-align: justify;
+          }
         }
         .social-icons{
           max-width: 210px;
           display: flex;
           justify-content: space-between;
-          margin: 55px 0 20px 20px;
+          margin: 55px 20px 20px 20px;
+          @include max-screen(991px){
+            margin-top: 20px;
+          }
+          @include max-screen(767px){
+            width: 30%;
+            margin: 10px 20px;
+          }
           a{
             color: #c29f00;
+            transition: 0.3s;
+            &:hover{
+              transform: scale(1.2);
+              transition: 0.3s;
+            }
           }
         }
       }
       .owl-dots{
         display: none;
       }
-
       .owl-nav{
         display: block;
         position: absolute;
-        left: 213px;
+        right: 75%;
         bottom: 117px;
+        transition: 0.5s;
+        @include max-screen(1199px){
+          right: 70%;
+        }
+        @include max-screen(991px){
+          right: 65%;
+          bottom: 90px;
+        }
+        @include max-screen(767px){
+          top: 10px;
+          left: 0;
+          right: 0;
+          bottom: 99%;
+          display: flex;
+          justify-content: space-between;
+
+        }
         .owl-prev,.owl-next{
-          &:focus{
-            outline: none;
-          }
           width: 33px;
           height: 33px;
           background-color: #362f2f;
+          transition: 0.3s;
+          @include max-screen(991px){
+            width: 27px;
+            height: 27px;
+          }
+          @include max-screen(767px){
+            width: 30px;
+            height: 30px;
+          }
+          &:focus{
+            outline: none;
+          }
+          &:hover {
+            background-color: #574f4f;
+            transition: 0.3s;
+            span{
+              color: #ffc162;
+              transition: 0.3s;
+            }
+          }
           span{
             font-size: 20px;
             color: white;
             font-style: italic;
+            transition: 0.3s;
+            @include max-screen(991px){
+              font-size: 15px;
+            }
+            @include max-screen(767px){
+              font-size: 20px;
+              line-height: 20px;
+              font-style: normal;
+            }
+          }
+        }
+        .owl-prev{
+          @include max-screen(767px){
+            margin-left: 25px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+          }
+        }
+        .owl-next{
+          @include max-screen(767px){
+            margin-right: 25px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
           }
         }
       }
     }
   }
 }
+
+.compress_more{
+  .descript{
+    width: 50%!important;
+    transition: 0.3s;
+    @include max-screen(991px){
+      width: 70%!important;
+    }
+    p{
+      height: 95px!important;
+      max-width: 75%!important;
+      transition: 0.3s!important;
+      @include max-screen(450px){
+        height: 190px!important;
+      }
+    }
+  }
+  .owl-nav{
+    right: 50%!important;
+    transition: 0.5s!important;
+    @include max-screen(991px){
+      right: 30% !important;
+    }
+  }
+}
+
+//////////////___Top_block_finish___////////////
