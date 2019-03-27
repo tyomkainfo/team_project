@@ -120,14 +120,10 @@ h1 {
 
     }
   }
-  .inna-caro{
-
-    .owl-carousel .owl-item img {
+  .slide-two .owl-item img {
       width: auto;
       height: 26px;
-
     }
-  }
 }
 .logo{
   position: absolute;
@@ -154,6 +150,7 @@ section{
       }
       img{
         width: 100%;
+        height: 100%;
       }
       .descript{
         background-color: #fff;
