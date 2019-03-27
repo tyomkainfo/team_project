@@ -68,7 +68,8 @@ h1 {
   position: absolute;
   top: 45px;
   left: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 10000; }
 
 .navbar-nav > li {
   float: none; }
