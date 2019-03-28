@@ -339,8 +339,6 @@ ul, ol {
   position: relative;
 
   .block_left {
-    width: 360px;
-    height: 360px;
     font-size: 16px;
     font-family: 'RobotoCondensed', sans-serif;
     color: rgb(255, 255, 255);
@@ -367,12 +365,6 @@ ul, ol {
 
     .img_rsvp:hover {
       transform: scale(1.5);
-    }
-
-    .col-sm-12 {
-      img {
-
-      }
     }
   }
 
