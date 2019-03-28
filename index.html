@@ -8,11 +8,11 @@
     <title></title>
     <!-- Latest compiled and minified CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
-
     <link rel="stylesheet" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
           integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
           integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
@@ -25,6 +25,7 @@
             crossorigin="anonymous"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/compress.js"></script>
 
 
 
@@ -55,34 +56,120 @@
                 </ul>
             </div><!-- /.navbar-collapse -->
             <div class="icons">
-            <a href="#" class="pull-right" title="envelope">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="#" class="pull-right" title="google-plus">
-                <i class="fab fa-google-plus-g"></i>
-            </a>
-            <a href="#" class="pull-right" title="Tampermonkey">
-                <i class="fab fa-simplybuilt"></i>
-            </a>
-            <a href="#" class="pull-right" title="instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="pull-right" title="twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="pull-right" title="facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
+                <a href="#" class="pull-right" title="envelope">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="pull-right" title="google-plus">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="pull-right" title="Tampermonkey">
+                    <i class="fab fa-simplybuilt"></i>
+                </a>
+                <a href="#" class="pull-right" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="pull-right" title="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="pull-right" title="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
                 <!--Logo -->
                 <a href="#" class="logo">
                     <img src="images/logo.png">
                 </a>
-        </div>
+            </div>
         </div>
     </div><!-- /.container -->
 </nav>
 <!--main banner Oleg -->
 <section>
+    <div class="container">
+        <div class="row">
+            <div class="owl-carousel slide-one" id="compres">
+                <div class="owl-spin">
+                    <div class="col-sm-12 carousel-content" >
+                        <img src="images/morgan.png" alt="">
+                        <div class="descript">
+                            <nav class="compress" onclick="compFunction()"><img src="images/compress.png" alt=""></nav>
+                            <h3>Morgan Freeman</h3>
+                            <span>actor</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur corporis distinctio fuga illum itaque libero modi nesciunt, omnis porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta eaque esse ex exercitationem, facilis impedit in ipsam quas rem repellendus reprehenderit sit, soluta totam ullam vel veniam voluptatibus!</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-share"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-spin">
+                    <div class="col-sm-12 carousel-content">
+                        <img src="images/aniston.png" alt="">
+                        <div class="descript">
+                            <nav class="compress" onclick="compFunction()"><img src="images/compress.png" alt=""></nav>
+                            <h3>Jennifer Aniston</h3>
+                            <span>actress</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur corporis distinctio fuga illum itaque libero modi nesciunt, omnis porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta eaque esse ex exercitationem, facilis impedit in ipsam quas rem repellendus reprehenderit sit, soluta totam ullam vel veniam voluptatibus!</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-share"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-spin">
+                    <div class="col-sm-12 carousel-content">
+                        <img src="images/brucy.png" alt="">
+                        <div class="descript">
+                            <nav class="compress" onclick="compFunction()"><img src="images/compress.png" alt=""></nav>
+                            <h3>Bruce Willis</h3>
+                            <span>actor</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur corporis distinctio fuga illum itaque libero modi nesciunt, omnis porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta eaque esse ex exercitationem, facilis impedit in ipsam quas rem repellendus reprehenderit sit, soluta totam ullam vel veniam voluptatibus!</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-share"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-spin">
+                    <div class="col-sm-12 carousel-content">
+                        <img src="images/smith.png" alt="">
+                        <div class="descript">
+                            <nav class="compress" onclick="compFunction()"><img src="images/compress.png" alt=""></nav>
+                            <h3>Will Smith</h3>
+                            <span>actor</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur corporis distinctio fuga illum itaque libero modi nesciunt, omnis porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta eaque esse ex exercitationem, facilis impedit in ipsam quas rem repellendus reprehenderit sit, soluta totam ullam vel veniam voluptatibus!</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-share"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-spin">
+                    <div class="col-sm-12 carousel-content">
+                        <img src="images/pitt.png" alt="">
+                        <div class="descript">
+                            <nav class="compress" onclick="compFunction()"><img src="images/compress.png" alt=""></nav>
+                            <h3>Brad Pitt</h3>
+                            <span>actor</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur corporis distinctio fuga illum itaque libero modi nesciunt, omnis porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta eaque esse ex exercitationem, facilis impedit in ipsam quas rem repellendus reprehenderit sit, soluta totam ullam vel veniam voluptatibus!</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-share"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
 <!--main banner Oleg end-->
@@ -97,7 +184,7 @@
                     <p>fashion workshop</p>
                     <p><strong>NOV 21-23</strong></p>
                     <p>9:00am - 4:00pm</p>
-                    <img  class="img_rsvp" src="img/rsvp.png" height="67" width="67"/>
+                    <img class="img_rsvp" src="img/rsvp.png" height="67" width="67"/>
                 </div>
             </div>
             <!--Zarina end-->
@@ -108,56 +195,61 @@
                     <div class="news-title">New</div>
 
                     <div class="row new-item">
-                        <div class="col-sm-3">
-                            <img src="images/new1.png" alt="new">
+                        <div class="col-sm-4 col-md-3 pull-left">
+                            <img class="new-img" src="images/new1.png" alt="new">
                         </div>
 
-                        <div class="col-sm-9 ">
+                        <div class="col-sm-8 col-md-9 ">
                             <div class="new-title">New Gallery Set</div>
                             <div class="new-date">09.12.2014</div>
                             <div class="new-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
-                                venenatis ante venenatis eg
-                                <a href="#" class="new-link pull-right">read more</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci,
+                                    ac
+                                    venenatis ante venenatis eg
+                                </p>
+                                <a href="#" class="new-link">read more</a>
                             </div>
-
                         </div>
                     </div>
+
                     <div class="row new-item">
-                        <div class="col-sm-3">
-                            <img src="images/new2.png" alt="new">
+                        <div class="col-sm-4 col-md-3 pull-left">
+                            <img class="new-img" src="images/new2.png" alt="new">
                         </div>
 
-                        <div class="col-sm-9 ">
+                        <div class="col-sm-8 col-md-9">
                             <div class="new-title">wedding workshop</div>
                             <div class="new-date">09.12.2014</div>
                             <div class="new-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
-                                venenatis ante venenatis eg
-                                <a href="#" class="new-link pull-right">read more</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci,
+                                    ac
+                                    venenatis ante venenatis eg
+                                </p>
+                                <a href="#" class="new-link">read more</a>
                             </div>
-
-
                         </div>
                     </div>
+
                     <div class="row new-item">
-                        <div class="col-sm-3">
-                            <img src="images/new3.png" alt="new">
+                        <div class="col-sm-4 col-md-3 pull-left">
+                            <img class="new-img" src="images/new3.png" alt="new">
                         </div>
 
-                        <div class="col-sm-9 ">
+                        <div class="col-sm-8 col-md-9">
                             <div class="new-title">Personal Project</div>
                             <div class="new-date">09.12.2014</div>
                             <div class="new-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
-                                venenatis ante venenatis eg
-                                <a href="#" class="new-link pull-right">read more</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci,
+                                    ac
+                                    venenatis ante venenatis eg
+                                </p>
+                                <a href="#" class="new-link ">read more</a>
                             </div>
-
-
                         </div>
                     </div>
-
 
                 </div>
 
@@ -165,19 +257,13 @@
 
 
         </div>
-        <!--Galya end-->
         <!--Tyomka -->
-        <div class="col-sm-4">12345678910</div>
+        <div class="col-sm-4">
+
+        </div>
         <!--Tyomka end-->
     </div>
-            <div class="col-sm-4"></div>
-            <!--Galya end-->
 
-            <!--Tyomka -->
-            <div class="col-sm-4">1234567891012</div>
-            <!--Tyomka end-->
-        </div>
-    </div>
 </section>
 <!--Last students -->
 <section>
@@ -189,7 +275,7 @@
         <div class="row">
             <div class="col-md-12">
 
-                <div class="owl-carousel">
+                <div class="owl-carousel slide-two">
                     <div class="container_partners">
                         <img src="images/phrase_one.png">
                     </div>
