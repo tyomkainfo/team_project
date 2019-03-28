@@ -137,6 +137,7 @@ h1 {
       margin-bottom: 20px; }
     .container .block_left .img_rsvp:hover {
       transform: scale(1.5); }
+
   .container footer .container_partners {
     max-width: 150px; }
   .container .slide-two .owl-item img {
@@ -153,6 +154,29 @@ h1 {
   padding-top: 27px;
   padding-right: 20px;
   font-size: 15px; }
+
+/**************FOOTER start***************/
+footer {
+  padding-top: 50px; }
+  footer .container_partners {
+    max-width: 150px; }
+  footer .footer_description {
+    margin-top: 80px; }
+    footer .footer_description p {
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif; }
+      footer .footer_description p:nth-of-type(1) {
+        margin-bottom: 0; }
+      footer .footer_description p:nth-of-type(3) {
+        margin-top: 35px;
+        margin-bottom: 30px; }
+  footer .owl-carousel .owl-item img {
+    width: auto;
+    height: 26px; }
+  footer .owl-nav {
+    display: none; }
+
+/****************FOOTER end******************/
 
 section {
   margin-bottom: 62px; }
