@@ -1,3 +1,7 @@
+@import "post_style.scss";
+
+
+
 @font-face {
   font-family: 'Robotocondensedlight';
   src: url('../fonts/Robotocondensedlight.eot');
@@ -337,7 +341,6 @@ ul, ol {
 
 .container {
   position: relative;
-
   .block_left {
     font-size: 16px;
     font-family: 'RobotoCondensed', sans-serif;
