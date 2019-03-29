@@ -1,0 +1,27 @@
+body{
+  padding: 0;
+  margin: 0
+}
+
+.about_top_block{
+
+  .about_me{
+    padding: 80px 35px 0 40px;
+    font-family: 'RobotoCondensed', sans-serif;
+    color: rgb(54, 47, 47);
+
+
+    h3 {
+      font-size: 18px;
+      line-height: 0.8;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 25px;
+
+    }
+    p{
+      font-size: 12px;
+      line-height: 1.3;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @import "post_style.scss";
+@import "about_style.scss";
 
 @font-face {
   font-family: 'Robotocondensedlight';
@@ -37,10 +38,6 @@ body {
   padding: 0;
   margin: 0;
 
-}
-
-h1 {
-  color: red;
 }
 
 img {

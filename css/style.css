@@ -81,6 +81,24 @@ button.btn:hover {
   .snare .social_post {
     justify-content: flex-start; }
 
+body {
+  padding: 0;
+  margin: 0; }
+
+.about_top_block .about_me {
+  padding: 80px 35px 0 40px;
+  font-family: 'RobotoCondensed', sans-serif;
+  color: #362f2f; }
+  .about_top_block .about_me h3 {
+    font-size: 18px;
+    line-height: 0.8;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px; }
+  .about_top_block .about_me p {
+    font-size: 12px;
+    line-height: 1.3; }
+
 @font-face {
   font-family: 'Robotocondensedlight';
   src: url("../fonts/Robotocondensedlight.eot");
@@ -92,9 +110,6 @@ button.btn:hover {
 body {
   padding: 0;
   margin: 0; }
-
-h1 {
-  color: red; }
 
 img {
   vertical-align: middle;
