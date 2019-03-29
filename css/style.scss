@@ -1,4 +1,6 @@
+@import "mixins";
 @import "post_style.scss";
+@import "blog";
 
 
 
@@ -23,11 +25,7 @@
 }
 
 
-@mixin max-screen($res) {
-  @media screen and (max-width: $res) {
-    @content;
-  }
-}
+
 
 $global-font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $global-color: #000;

@@ -1,0 +1,197 @@
+@import "variables";
+
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-blog {
+  margin-top: -25px;
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  font-family: $global-font-family;
+
+  & > *[class^="col-"] {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &:nth-child(odd) {
+      .card-post {
+        background-color: $primary-color;
+      }
+    }
+
+    &:nth-child(even) {
+      .card-post {
+        background-color: $global-color;
+      }
+    }
+  }
+
+}
+
+.card-post {
+  color: $global-inverse-color;
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    right: 20px;
+    height: 1px;
+    left: 20px;
+    padding: 0 10px;
+    background: url(../images/blog/sep.png) repeat;
+  }
+
+
+  &:nth-child(odd) {
+    background-color: $primary-color;
+  }
+
+  &:nth-child(even) {
+    background-color: $global-color;
+  }
+
+  .btn-secondary {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: $global-transition;
+    transition-delay: .1s;
+    background-color: $theme-color;
+    padding: 8px 55px;
+    text-transform: uppercase;
+    color: $global-inverse-color;
+    border-radius: 0;
+    margin-bottom: 15px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-color: #ffd207;
+      border-radius: 50%;
+      transition: .5s;
+      z-index: -1;
+    }
+
+    &::before {
+      left: -20px;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      right: -20px;
+      transform: translate(50%, -50%);
+    }
+
+    &:hover {
+      background-color: #ffd207;
+
+      &::before {
+        animation: criss-cross-left .8s;
+      }
+
+      &::after {
+        animation: criss-cross-right .8s;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 30px 10px;
+    flex-grow: 1;
+  }
+
+  .card-title {
+    color: $global-inverse-color;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: normal;
+    transition: $global-transition;
+
+    &:hover {
+      color: $theme-color;
+    }
+  }
+
+  .card-description {
+    font-weight: 300;
+    margin-bottom: 40px;
+    @include max-screen(768px) {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .card-meta {
+    padding: 0 15px;
+    margin: 30px 0;
+
+    a {
+      color: $global-inverse-color;
+    }
+
+    i {
+      padding-right: 5px;
+    }
+  }
+
+}
+
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px
+  }
+
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px
+  }
+
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px
+  }
+}
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px
+  }
+
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px
+  }
+
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px
+  }
+}
