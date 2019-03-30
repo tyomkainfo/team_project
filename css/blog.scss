@@ -8,6 +8,7 @@
 
 .grid-blog {
   margin-top: -25px;
+  margin-bottom: 50px;
 
   a {
     &:hover,
@@ -120,7 +121,7 @@
   }
 
   .card-body {
-    padding: 30px 10px;
+    padding: 20px 10px;
     flex-grow: 1;
   }
 
@@ -130,6 +131,10 @@
     text-transform: uppercase;
     font-weight: normal;
     transition: $global-transition;
+
+    @include max-screen(768px){
+      font-size: 21px;
+    }
 
     &:hover {
       color: $theme-color;
@@ -158,6 +163,67 @@
     }
   }
 
+}
+
+.pagination-blog {
+  @include max-screen(480px) {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  li {
+    &:first-child,
+    &:last-child,
+    &.disabled:last-child,
+    &.disabled:first-child {
+      a {
+        background-color: $primary-color;
+        text-transform: uppercase;
+        padding: 12px 26px;
+        border-radius: 0;
+        margin-left: 12px;
+        margin-right: 12px;
+        color: $global-inverse-color;
+
+        @include max-screen(480px) {
+          padding: 12px 10px;
+        }
+      }
+
+      &.disabled:last-child a:hover,
+      &.disableda:last-child a:focus,
+      &.disabled:first-child a:hover,
+      &.disableda:first-child a:focus {
+        color: $global-inverse-color;
+      }
+    }
+
+    a,
+    &.disabled > a {
+      color: $global-color;
+      border-radius: 0;
+      font-size: $global-font-size;
+      border: 1px solid transparent;
+      padding: 12px 15px;
+      transition: $global-transition;
+      margin: 0;
+      @include max-screen(480px) {
+        padding: 12px 10px;
+      }
+    }
+
+    a:hover {
+      border: 1px solid $primary-color;
+      background: $global-inverse-color;
+      color: $global-color;
+    }
+
+    &.disabled a {
+      &:hover {
+        border: 1px solid transparent;
+        color: $global-color;
+      }
+    }
+  }
 }
 
 @-webkit-keyframes criss-cross-right {
