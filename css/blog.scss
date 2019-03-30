@@ -132,7 +132,7 @@
     font-weight: normal;
     transition: $global-transition;
 
-    @include max-screen(768px){
+    @include max-screen(768px) {
       font-size: 21px;
     }
 
@@ -170,6 +170,7 @@
     margin-left: -12px;
     margin-right: -12px;
   }
+
   li {
     &:first-child,
     &:last-child,
@@ -209,13 +210,19 @@
       @include max-screen(480px) {
         padding: 12px 10px;
       }
+      &:focus{
+
+      }
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
       border: 1px solid $primary-color;
       background: $global-inverse-color;
       color: $global-color;
+      outline: none;
     }
+
 
     &.disabled a {
       &:hover {
