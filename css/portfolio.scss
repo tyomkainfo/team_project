@@ -1,0 +1,552 @@
+@import "style.scss";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bsbrgd');
+  src:  url('../fonts/icomoon.eot?bsbrgd#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?bsbrgd') format('truetype'),
+  url('../fonts/icomoon.woff?bsbrgd') format('woff'),
+  url('../fonts/icomoon.svg?bsbrgd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+
+/////////////____Portfolio____////////////
+
+.lg-object {
+  @include max-screen(767px) {
+    height: 20%;
+  }
+}
+
+
+#lg-counter{
+  //display: none;
+}
+
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+  height: 70% !important;
+  border-radius: 30px;
+  box-shadow: 0 0 70px 30px #000000;
+  filter: grayscale(1);
+  @include max-screen(1199px){
+    height: auto !important;
+    width: 80% !important;
+  }
+  @include max-screen(359px){
+    height: auto !important;
+    margin-top: -30px!important;
+  }
+}
+
+.lg-img-wrap{
+
+}
+
+.lg-sub-html{
+  background: none;
+  h1{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 47px;
+    text-align: center;
+    font: 40px/42px 'Robotocondensed';
+    color: #fff;
+    font-style: italic;
+    letter-spacing: 1.9px;
+    @include max-screen(991px){
+      font-size: 30px;
+    }
+    @include max-screen(767px){
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+  p{
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    right: 5%;
+    font: 15px/18px 'Robotocondensedlight';
+    letter-spacing: 1.1px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    @include max-screen(1199px){
+      top: 85%;
+    }
+    @include max-screen(767px){
+      left: 0;
+      right: 0;
+      //height: 20%;
+      top: 75%;
+      bottom: 15px;
+      font-size: 13px;
+      line-height: 16px;
+      //letter-spacing: 0.6px;
+      overflow: scroll;
+    }
+  }
+}
+
+.lg-outer #lg-share:after{
+  font-family: 'icomoon', serif;
+  content: "\e908";
+  font-size: 18px;
+}
+
+.lg-outer #lg-share-facebook .lg-icon {
+  color: #3b5998;
+}
+.lg-outer #lg-share-facebook .lg-icon:after {
+  font-family: 'icomoon', serif;
+  content: "\e905";
+}
+.lg-outer #lg-share-twitter .lg-icon {
+  color: #00aced;
+}
+.lg-outer #lg-share-twitter .lg-icon:after {
+  font-family: 'icomoon', serif;
+  content: "\e903";
+}
+.lg-outer #lg-share-googleplus .lg-icon {
+  color: #dd4b39;
+}
+.lg-outer #lg-share-googleplus .lg-icon:after {
+  font-family: 'icomoon', serif;
+  content: "\e900";
+}
+.lg-outer #lg-share-instagramm .lg-icon {
+  color: #cb2027;
+}
+.lg-outer #lg-share-instagramm .lg-icon:after {
+  font-family: 'icomoon', serif;
+  content: "\e904";
+}
+
+.lg-fullscreen:after {
+  font-family: 'icomoon', serif;
+  content: "\e902";
+  font-size: 30px;
+}
+.lg-fullscreen-on .lg-fullscreen:after{
+  font-family: 'icomoon', serif;
+  content: "\e902";
+  font-size: 30px;
+}
+
+.lg-autoplay-button:after{
+  font-family: 'icomoon', serif;
+  content: "\e907";
+  font-size: 18px;
+}
+.lg-show-autoplay .lg-autoplay-button:after{
+  font-family: 'icomoon', serif;
+  content: "\e906";
+  font-size: 18px;
+}
+
+.lg-toolbar .lg-download{
+
+  &:hover{
+    &:after{
+      color: #fff;
+      transition: 0.3s;
+    }
+  }
+}
+
+.lg-toolbar .lg-download:after{
+  content: "\f019";
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 900;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: inherit;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+
+
+}
+
+.lg-toolbar .lg-close:after{
+  font-family: 'icomoon', serif;
+  content: "\e901";
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.lg-toolbar .lg-close{
+  &:after{
+    transition: 0.3s;
+  }
+  &:hover{
+    transition: 0.3s;
+    &:after{
+      color: white;
+      transition: 0.3s;
+    }
+  }
+}
+
+.lg-actions .lg-prev,.lg-next{
+  transition: 0.3s;
+  &:before{transition: 0.3s;}
+  &:after{transition: 0.3s;}
+  &:hover{
+    transform: scale(1.2);
+    &:before{
+      color: white;
+      transition: 0.3s;
+    }
+    &:after{
+      color: white;
+      transition: 0.3s;
+    }
+  }
+}
+.lg-backdrop{
+  background: url("../images/hollywood-banner.jpg") center;
+  background-size: cover;
+  filter: grayscale(0.9);
+}
+
+section {
+  .container {
+    .gall_headline {
+      margin-top: 48%;
+      @include max-screen(767px){
+        margin-top: 35px;
+      }
+      h5 {
+        font: 24px/14px 'RobotoCondensed';
+        text-transform: uppercase;
+        color: #362f2f;
+        letter-spacing: 1.1px;
+        @include max-screen(767px){
+          text-align: center;
+        }
+      }
+      p {
+        font: 18px/14px 'Robotocondensedlight';
+        text-transform: uppercase;
+        color: #362f2f;
+        letter-spacing: 1.1px;
+        margin-top: 5px;
+        @include max-screen(767px){
+          text-align: center;
+        }
+      }
+    }
+    .row {
+      padding: 0 15px;
+
+      .gal_item {
+        //height: 380px;
+        position: relative;
+        padding: 0;
+        transition: 0.3s;
+        overflow: hidden;
+        filter: grayscale(1);
+        @media only screen and (min-width: 992px)  and (max-width: 1199px){
+          height: 313px!important;
+        }
+        //@include max-screen(1199px){
+        //  height: 313px;
+        //}
+        //@include max-screen(991px){
+        //  height: 240px;
+        //}
+        //
+        //@include max-screen(767px){
+        //  height: auto;
+        //  margin-bottom: 10px;
+        //}
+
+        &:hover {
+          .blick{
+            top: 200%;
+            transition: 1s;
+          }
+          .cover{
+            width: 65%;
+            height: 65%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            opacity: 1;
+            transition: 0.3s;
+          }
+        }
+        .blick{
+          position:absolute;
+          width: 200%;
+          height: 150px;
+          background: rgba(255,255,255,.5);
+          top: -100%;
+          left: -50%;
+          filter: blur(30px);
+          transform: rotate(-35deg);
+        }
+        .cover{
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.5);
+          width: 5%;
+          height: 5%;
+          position: absolute;
+          z-index: 2;
+          margin: auto;
+          transition: 0.5s;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          &:after {
+            font-family: "Font Awesome 5 Free", serif;
+            font-weight: 900;
+            font-size: 18px;
+            content: "\f002";
+            font-style: normal;
+            text-decoration: inherit;
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+        .from_top{
+          top: -200%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        .from_top_right{
+          top: -200%;
+          left: 0;
+          right: -200%;
+          bottom: 0;
+        }
+        .from_right{
+          top: 0;
+          left: 0;
+          right: -200%;
+          bottom: 0;
+        }
+        .from_bottom_right{
+          top: 0;
+          left: 0;
+          right: -200%;
+          bottom: -200%;
+        }
+        .from_bottom{
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: -200%;
+        }
+        .from_bottom_left{
+          top: 0;
+          left: -200%;
+          right: 0;
+          bottom: -200%;
+        }
+        .from_left{
+          top: 0;
+          left: -200%;
+          right: 0;
+          bottom: 0;
+        }
+        .from_center{
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .n_smit{
+        background: url("../images/persons/smith.png") center;
+        background-size: cover;
+      }
+      .n_pitt{
+        background: url("../images/persons/pitt.png") center;
+        background-size: cover;
+      }
+      .n_will{
+        background: url("../images/persons/brucy.png") center;
+        background-size: cover;
+      }
+      .n_anis{
+        background: url("../images/persons/aniston.png") center;
+        background-size: cover;
+      }
+      .n_lope{
+        background: url("../images/persons/lopez.png") center;
+        background-size: cover;
+      }
+      .n_knig{
+        background: url("../images/persons/knightley.png") center;
+        background-size: cover;
+      }
+      .n_free{
+        background: url("../images/persons/morgan.png") center;
+        background-size: cover;
+      }
+      .n_depp{
+        background: url("../images/persons/depp.png") center;
+        background-size: cover;
+      }
+      .n_bell{background: url("../images/persons/belluci.jpg") center;}
+      .n_cloo{background: url("../images/persons/clooney.jpg") center;}
+      .n_cruz{background: url("../images/persons/cruz.jpg") center;}
+      .n_down{background: url("../images/persons/downey.jpg") center;}
+      .n_dica{background: url("../images/persons/dicaprio.jpeg") center;}
+      .n_diaz{background: url("../images/persons/diaz.jpg") center;}
+      .n_niro{background: url("../images/persons/de_niro.jpg") center;}
+      .n_foxx{background: url("../images/persons/foxx.jpg") center;}
+      .n_gand{background: url("../images/persons/gandolfini.jpg") center;}
+      .n_haye{background: url("../images/persons/hayek.jpg") center;}
+      .n_hopk{background: url("../images/persons/hopkins.jpg") center;}
+      .n_jack{background: url("../images/persons/jackman.jpg") center;}
+      .n_john{background: url("../images/persons/johnson.JPG") center;}
+      .n_joli{background: url("../images/persons/jolie.jpg") center;}
+      .n_kidm{background: url("../images/persons/kidman.jpg") center;}
+      .n_l_ja{background: url("../images/persons/l_jackson.jpg") center;}
+      .n_murp{background: url("../images/persons/murphy.jpg") center;}
+      .n_paci{background: url("../images/persons/pacino.jpg") center;}
+      .n_port{background: url("../images/persons/portman.jpg") center;}
+      .n_reev{background: url("../images/persons/reeves.jpg") center;}
+      .n_schw{background: url("../images/persons/schwarzenegger.jpg") center;}
+      .n_snip{background: url("../images/persons/snipes.jpg") center;}
+      .n_stat{background: url("../images/persons/statham.jpg") center;}
+      .n_tara{background: url("../images/persons/tarantino.jpeg") center;}
+      .n_ther{background: url("../images/persons/theron.jpg") center;}
+      .n_wahl{background: url("../images/persons/wahlberg.jpg") center;}
+      .n_wash{background: url("../images/persons/washington.jpg") center;}
+      .n_cage{background: url("../images/persons/cage.jpg") center;
+        display: none!important;
+        @include max-screen(767px){
+          display: block!important;
+        }
+      }
+      .mobile{
+        display: none;
+        background-size: cover;
+        //position: relative;
+        @include max-screen(767px){
+          display: block;
+        }
+
+      }
+    }
+  }
+}
+
+.load_photo{
+  .container{
+    .row{
+      .mobile{
+        display: block;
+        animation-name: loads;
+        animation-duration: 1.5s;
+      }
+    }
+    .load_content{
+      display: none !important;
+    }
+  }
+}
+@keyframes loads{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.load_content{
+  margin: 40px auto;
+  width: 100px;
+  height: 30px;
+  background-color: #362f2f;
+  color: white;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.3s;
+  &:hover{
+    background-color: #7a7272;
+    transition: 0.3s;
+  }
+  @include max-screen(767px){
+    display: none;
+  }
+}
+
+.inTop{
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  left: 1072px;
+  margin: auto;
+  bottom: 280px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+  background-color: #362f2f;
+  text-align: center;
+  transition: 0.2s;
+  i{
+    font-size: 15px;
+    line-height: 50px;
+    color: white;
+    @include max-screen(991px){
+      line-height: 35px;
+    }
+    @include max-screen(767px){
+      line-height: 15px;
+      font-size: 12px;
+    }
+  }
+  &:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    border-radius: 50%;
+  }
+  @media only screen and (min-width: 992px)  and (max-width: 1199px){
+    left: 872px;
+  }
+  @media only screen and (min-width: 768px)  and (max-width: 991px){
+    left: 667px;
+  }
+  @include max-screen(991px){
+    width: 35px;
+    height: 35px;
+  }
+  @include max-screen(767px){
+    left: auto;
+    right: 20px;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+//////////////////////____Portfolio-END____////////////////////////
