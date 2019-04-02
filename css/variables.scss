@@ -16,3 +16,10 @@ $global-transition: .2s;
     @content;
   }
 }
+
+
+@mixin min-screen($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}

@@ -120,6 +120,23 @@
     }
   }
 
+  .card-top {
+    display: block;
+    overflow: hidden;
+
+    @include min-screen (992px) {
+      &:hover img {
+        transform: scale(1.1);
+      }
+      img {
+        will-change: transform;
+        transition: .4s;
+      }
+    }
+
+
+  }
+
   .card-body {
     padding: 20px 10px;
     flex-grow: 1;
@@ -132,7 +149,7 @@
     font-weight: normal;
     transition: $global-transition;
 
-    @include max-screen(768px){
+    @include max-screen(768px) {
       font-size: 21px;
     }
 
@@ -170,6 +187,7 @@
     margin-left: -12px;
     margin-right: -12px;
   }
+
   li {
     &:first-child,
     &:last-child,
@@ -183,21 +201,66 @@
         margin-left: 12px;
         margin-right: 12px;
         color: $global-inverse-color;
+        border: 1px solid $primary-color;
 
         @include max-screen(480px) {
           padding: 12px 10px;
         }
+
+        &:hover {
+          background-color: $primary-color;
+          color: $global-inverse-color;
+          border: 1px solid $primary-color;
+        }
+      }
+
+      &:last-child a:hover,
+      &:last-child a:focus,
+      &:first-child a:hover,
+      &:first-child a:focus {
+        color: $global-color;
+        background: $global-inverse-color;
+        border: 1px solid $primary-color;
+
       }
 
       &.disabled:last-child a:hover,
-      &.disableda:last-child a:focus,
+      &.disabled:last-child a:focus,
       &.disabled:first-child a:hover,
-      &.disableda:first-child a:focus {
+      &.disabled:first-child a:focus {
         color: $global-inverse-color;
+        background: $primary-color;
+        border: 1px solid $primary-color;
+
       }
     }
 
-    a,
+
+
+    a {
+      color: $global-color;
+      border-radius: 0;
+      font-size: $global-font-size;
+      border: 1px solid transparent;
+      padding: 12px 15px;
+      transition: $global-transition;
+      margin: 0;
+      float: none;
+      outline: none;
+
+      @include max-screen(480px) {
+        padding: 12px 10px;
+      }
+
+      &:hover,
+      &:focus {
+        border: 1px solid $primary-color;
+        color: $global-color;
+        background: $global-inverse-color;
+      }
+    }
+
+
     &.disabled > a {
       color: $global-color;
       border-radius: 0;
@@ -206,23 +269,27 @@
       padding: 12px 15px;
       transition: $global-transition;
       margin: 0;
+      float: none;
+      outline: none;
       @include max-screen(480px) {
         padding: 12px 10px;
       }
     }
 
-    a:hover {
+    &.active > a {
       border: 1px solid $primary-color;
       background: $global-inverse-color;
       color: $global-color;
-    }
 
-    &.disabled a {
-      &:hover {
-        border: 1px solid transparent;
+      &:hover,
+      &:focus {
+        border: 1px solid $primary-color;
+        background: $global-inverse-color;
         color: $global-color;
       }
     }
+
+
   }
 }
 
